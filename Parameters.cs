@@ -7,19 +7,19 @@ namespace TerrariaRandomizer;
 
 public class Options
 {
-    [Option('h', "help")]
+    [Option("help")]
     public bool Help { get; set; }
 
-    [Option('v', "version")]
+    [Option("version")]
     public bool Version { get; set; }
 
-    [Option('c', "count", Default = 1)]
+    [Option("count", Default = 1)]
     public int Count { get; set; }
 
     [Option("maxAnimationFrames", Default = 150)]
     public int MaxAnimationFrames { get; set; }
 
-    [Option('f', "fast", Default = false)]
+    [Option("fast", Default = false)]
     public bool Fast { get; set; }
 
     [Option("onlyVanilla", Default = false)]

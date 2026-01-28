@@ -77,10 +77,10 @@ public static class UI
         if (Russian)
         {
             AnsiConsole.MarkupLine("Параметры:");
-            AnsiConsole.MarkupLine("  [yellow]-h, --help[/]                   [grey]Показать эту справку[/]");
-            AnsiConsole.MarkupLine("  [yellow]-c=N, --count=N[/]              [grey]Количество персонажей для генерации (по умолчанию: 1, макс: 12)[/]");
+            AnsiConsole.MarkupLine("  [yellow]--help[/]                       [grey]Показать эту справку[/]");
+            AnsiConsole.MarkupLine("  [yellow]--count=N[/]                    [grey]Количество персонажей для генерации (по умолчанию: 1, макс: 12)[/]");
             AnsiConsole.MarkupLine("  [yellow]--maxAnimationFrames=N[/]       [grey]Макс. кадров анимации (по умолчанию: 150, мин: 55)[/]");
-            AnsiConsole.MarkupLine("  [yellow]-f, --fast[/]                   [grey]Отключить анимацию ролла[/]");
+            AnsiConsole.MarkupLine("  [yellow]--fast[/]                       [grey]Отключить анимацию ролла[/]");
             AnsiConsole.MarkupLine("  [yellow]--onlyVanilla[/]                [grey]Только режим Vanilla[/]");
             AnsiConsole.MarkupLine("  [yellow]--onlyCalamity[/]               [grey]Только режим Calamity[/]");
             AnsiConsole.MarkupLine("  [yellow]--useSeeds[/]                   [grey]Использовать специальные сиды[/]");
@@ -100,10 +100,10 @@ public static class UI
         else
         {
             AnsiConsole.MarkupLine("Options:");
-            AnsiConsole.MarkupLine("  [yellow]-h, --help[/]                   [grey]Show this help[/]");
-            AnsiConsole.MarkupLine("  [yellow]-c=N, --count=N[/]              [grey]Number of characters to generate (default: 1, max: 12)[/]");
+            AnsiConsole.MarkupLine("  [yellow]--help[/]                       [grey]Show this help[/]");
+            AnsiConsole.MarkupLine("  [yellow]--count=N[/]                    [grey]Number of characters to generate (default: 1, max: 12)[/]");
             AnsiConsole.MarkupLine("  [yellow]--maxAnimationFrames=N[/]       [grey]Max animation frames (default: 150, min: 55)[/]");
-            AnsiConsole.MarkupLine("  [yellow]-f, --fast[/]                   [grey]Disable roll animation[/]");
+            AnsiConsole.MarkupLine("  [yellow]--fast[/]                       [grey]Disable roll animation[/]");
             AnsiConsole.MarkupLine("  [yellow]--onlyVanilla[/]                [grey]Only Vanilla mode[/]");
             AnsiConsole.MarkupLine("  [yellow]--onlyCalamity[/]               [grey]Only Calamity mode[/]");
             AnsiConsole.MarkupLine("  [yellow]--useSeeds[/]                   [grey]Use special seeds[/]");
