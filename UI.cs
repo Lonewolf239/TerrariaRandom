@@ -94,7 +94,7 @@ public static class UI
             AnsiConsole.MarkupLine("  [yellow]--ru[/]                         [grey]Включить русский язык[/]");
             Console.WriteLine();
             AnsiConsole.MarkupLine("[grey]Примеры:[/]");
-            AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]-c=3 -f --noAscii --noColor[/]");
+            AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]");
             AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]");
         }
         else
@@ -117,7 +117,7 @@ public static class UI
             AnsiConsole.MarkupLine("  [yellow]--ru[/]                         [grey]Enable russian language[/]");
             Console.WriteLine();
             AnsiConsole.MarkupLine("[grey]Examples:[/]");
-            AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]-c=3 -f --noAscii --noColor[/]");
+            AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]");
             AnsiConsole.MarkupLine("  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]");
         }
         Console.WriteLine();
