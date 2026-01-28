@@ -31,16 +31,16 @@
 
 **Batch of 4 quick Vanilla characters:**
 ```
-./terraria-random -c=4 -f --onlyVanilla --noAscii
+./terraria-random --count=4 --fast --onlyVanilla --noAscii
 ```
 
 ## All Options
 
 ```
--h, --help                    Show this help
--c=N, --count=N               Number of characters (default: 1, max: 12)
+--help                        Show this help
+--count=N                     Number of characters (default: 1, max: 12)
 --maxAnimationFrames=N        Max animation frames (default: 150, min: 55)
--f, --fast                    Disable roll animation
+--fast                        Disable roll animation
 --onlyVanilla                 Only Vanilla mode
 --onlyCalamity                Only Calamity mode
 --useSeeds                    Include special seeds
@@ -52,7 +52,7 @@
 --disableClasses=CLASS,...    Disable classes (Melee,Ranged,Mage,Summoner,Rogue)
 --listClasses                 List available classes
 -ru                           Russian language
--v, --version                 Show version
+--version                     Show version
 ```
 
 ## Requirements
