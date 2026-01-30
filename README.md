@@ -1,8 +1,12 @@
+![Terraria Randomizer](https://img.shields.io/badge/Terraria-Randomizer-brightgreen?style=flat&logo=terraria&logoColor=white) 
+[![.NET 10](https://img.shields.io/badge/.NET-10.0-blueviolet)](https://dotnet.microsoft.com/download/dotnet/10.0)
+[![GitHub stars](https://img.shields.io/github/stars/Lonewolf239/terraria-randomizer)](https://github.com/Lonewolf239/terraria-randomizer)
+
 # Terraria Randomizer
 
 **Terraria Randomizer** instantly generates complete character presets for your next Terraria adventure. No more decision paralysis — get random names, classes, seeds, challenges, and settings with one click. Press **Enter/Space** to reroll, **Esc** to exit.
 
-**Version:** 0.4
+**Version:** 0.4 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Download Releases](https://github.com/Lonewolf239/terraria-randomizer/releases)
 
 ## Features
 - Random character names from curated lists
@@ -23,7 +27,7 @@
 ./terraria-randomizer
 ```
 
-**Generate 4 fast Vanilla characters (no animation):**
+**Generate 4 fast Vanilla characters (no animation and ASCII art):**
 ```bash
 ./terraria-randomizer --count=4 --fast --onlyVanilla --noAscii
 ```
@@ -46,7 +50,7 @@
 | `--useChallenges` | Include challenges | `true` |
 | `--noAscii` | Disable ASCII art | `false` |
 | `--noColor` | Disable colors | `false` |
-| `--disableClasses="Melee,Ranged"` | Disable specific classes | - |
+| `--disableClasses="Melee,Ranged"` | Disable specific classes | `none` |
 | `--language=en` | Set language | `en` |
 
 *Run `./terraria-randomizer --help` for full list.*
@@ -54,7 +58,7 @@
 ## Installation & Requirements
 
 ### Prerequisites
-- [.NET 10+ runtime](https://dotnet.microsoft.com/download)
+- [.NET 10+ runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
 - Terminal with ANSI support (Windows Terminal, Linux, macOS)
 
 ### Build from source
@@ -62,7 +66,7 @@
 git clone https://github.com/Lonewolf239/terraria-randomizer.git
 cd terraria-randomizer
 dotnet build
-dotnet publish -c Release -r <rid> --self-contained
+dotnet publish -c Release -r <rid>
 ```
 *Replace `<rid>` with `win-x64`, `linux-x64`, `osx-x64`, etc.*
 
@@ -71,11 +75,11 @@ dotnet publish -c Release -r <rid> --self-contained
 - Run `--listLanguages` for all available
 
 ## Example Output
-![Demo](https://github.com/Lonewolf239/terraria-randomizer/blob/master/demo.png)
+![Demo](https://raw.githubusercontent.com/Lonewolf239/terraria-randomizer/5706ea3/demo.png)
 
 ## Credits
 **Author:** [Lonewolf239](https://github.com/Lonewolf239)
 
 Star this repo if it saves you time on character creation!
 
-***
+**Changelogs:** https://github.com/Lonewolf239/terraria-randomizer/releases
