@@ -6,6 +6,8 @@
 
 **Terraria Randomizer** instantly generates complete character presets for your next Terraria adventure. No more decision paralysis — get random names, classes, seeds, challenges, and settings with one click. Press **Enter/Space** to reroll, **Esc** to exit.
 
+**Star this repo if it saves you time on character creation!**
+
 **Version:** 0.4 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Download Releases](https://github.com/Lonewolf239/terraria-randomizer/releases)
 
 ## Features
@@ -79,7 +81,5 @@ dotnet publish -c Release -r <rid>
 
 ## Credits
 **Author:** [Lonewolf239](https://github.com/Lonewolf239)
-
-Star this repo if it saves you time on character creation!
 
 **Changelogs:** https://github.com/Lonewolf239/terraria-randomizer/releases
