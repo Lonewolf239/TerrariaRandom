@@ -54,7 +54,7 @@
 | `--noAscii` | Disable ASCII art | `false` |
 | `--noColor` | Disable colors | `false` |
 | `--disableClasses="Melee,Ranged"` | Disable specific classes | `none` |
-| `--enableClasses="Melee,Ranged` | Enable ONLY listed classes | `none` |
+| `--enableClasses="Melee,Ranged"` | Enable ONLY listed classes | `none` |
 | `--language=en` | Set language | `en` |
 
 *Run `./terraria-randomizer --help` for full list.*
