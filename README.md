@@ -12,11 +12,11 @@
 
 **Star this repo if it saves you time on character creation!**
 
-**Version:** 0.5.1 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Download Releases](https://github.com/Lonewolf239/terraria-randomizer/releases)
+**Version:** 0.5.2 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Download Releases](https://github.com/Lonewolf239/terraria-randomizer/releases)
 
 ## Features
 - Random character names from curated lists
-- Classes: Melee, Ranged, Mage, Summoner (Rogue for Calamity)
+- Classes: Melee, Ranged, Mage, Summoner (True Melee and Rogue for Calamity)
 - World evil: Corruption, Crimson, or Random
 - Special seeds: "for the worthy", "drunk world", "get fixed boi", etc.
 - World sizes: Small, Medium, Large
@@ -99,11 +99,11 @@ dotnet publish -c Release -r <rid>
 
 **Поставьте звездочку этому репозиторию, если он экономит вам время при создании персонажа!**
 
-**Версия:** 0.5.1 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Скачать релизы](https://github.com/Lonewolf239/terraria-randomizer/releases)
+**Версия:** 0.5.2 | [.NET 10.0](https://dotnet.microsoft.com/ru-ru/download/dotnet/10.0) | [Скачать релизы](https://github.com/Lonewolf239/terraria-randomizer/releases)
 
 ## Особенности
 - Случайные имена персонажей из тщательно подобранных списков
-- Классы: Воин, Стрелок, Маг, Призыватель (Разбойник для Calamity)
+- Классы: Воин, Стрелок, Маг, Призыватель (Истинный воин и Разбойник для Calamity)
 - Зло мира: Порча, Багрянец или Случайный
 - Специальные сиды: "for the worthy", "drunk world", "get fixed boi" и др.
 - Размеры мира: Маленький, Средний, Большой
