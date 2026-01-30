@@ -81,4 +81,5 @@ dotnet publish -c Release -r <rid>
 
 ## Credits
 **Author:** [Lonewolf239](https://github.com/Lonewolf239)
+
 **Changelogs:** https://github.com/Lonewolf239/terraria-randomizer/releases
