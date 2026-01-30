@@ -17,7 +17,7 @@
 - Difficulties: Standard/Expert/Master + Calamity modes (Revengeance/Death/Infernum)
 - Challenges: Pacifist, 100HP, No Healing, Ironman, and more
 - Animated rolling with customizable speed
-- Vanilla or Calamity mod support
+- Calamity mod support
 - Colorful console UI with ASCII art (optional)
 
 ## Quick Start
