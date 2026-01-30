@@ -1,78 +1,81 @@
 # Terraria Randomizer
 
-**Terraria Randomizer** generates random character presets for Terraria adventures, eliminating the need to decide on names, classes, seeds, challenges, and other settings. Press Enter/Space to reroll, Esc to exit.
-
-## Features
-
-- Random character names from a curated list
-- Class selection: Melee, Ranged, Mage, Summoner (Rogue for Calamity)
-- World evil: Corruption, Crimson, or Random
-- Special seeds: "for the worthy", "drunk world", "get fixed boi", etc.
-- World sizes: Small, Medium, Large
-- Difficulties: Standard/Expert/Master (Vanilla) and Revengeance/Death/Infernum (Calamity)
-- Challenges: Pacifist, 100HP, No Healing, Ironman, etc.
-- Animated rolling effect with customizable speed
-- Vanilla or Calamity mod support
-- Colorful console UI with ASCII art (disable with flags)
+**Terraria Randomizer** instantly generates complete character presets for your next Terraria adventure. No more decision paralysis — get random names, classes, seeds, challenges, and settings with one click. Press **Enter/Space** to reroll, **Esc** to exit.
 
 **Version:** 0.4
 
-## Examples
+## Features
+- Random character names from curated lists
+- Classes: Melee, Ranged, Mage, Summoner (Rogue for Calamity)
+- World evil: Corruption, Crimson, or Random
+- Special seeds: "for the worthy", "drunk world", "get fixed boi", etc.
+- World sizes: Small, Medium, Large
+- Difficulties: Standard/Expert/Master + Calamity modes (Revengeance/Death/Infernum)
+- Challenges: Pacifist, 100HP, No Healing, Ironman, and more
+- Animated rolling with customizable speed
+- Vanilla or Calamity mod support
+- Colorful console UI with ASCII art (optional)
 
-**Generate one random preset (default):**
-```
+## Quick Start
+
+**Generate one random preset:**
+```bash
 ./terraria-random
 ```
 
-**Calamity Death Mode Rogue:**
-```
-./terraria-random --onlyCalamity --disableClasses="Melee,Ranged,Mage,Summoner"
+**Generate 4 fast Vanilla characters (no animation):**
+```bash
+./terraria-random --count=4 --fast --onlyVanilla --noAscii
 ```
 
-**Batch of 4 quick Vanilla characters:**
-```
-./terraria-random --count=4 --fast --onlyVanilla --noAscii
+**Calamity Death Mode Rogue only:**
+```bash
+./terraria-random --onlyCalamity --disableClasses="Melee,Ranged,Mage,Summoner"
 ```
 
 ## All Options
 
-```
---help                        Show this help
---count=N                     Number of characters (default: 1, max: 12)
---maxAnimationFrames=N        Max animation frames (default: 150, min: 55)
---fast                        Disable roll animation
---onlyVanilla                 Only Vanilla mode
---onlyCalamity                Only Calamity mode
---useSeeds                    Include special seeds
---useChallenges               Include challenges
---useWorldSize                Random world size
---useDifficulty               Random difficulty
---noAscii                     Disable ASCII art
---noColor                     Disable colors
---disableClasses=CLASS,...    Disable classes (Melee,Ranged,Mage,Summoner,Rogue)
---listClasses                 List available classes
---language                    Use selected language (default: en)
---listLanguages               List available languages
---version                     Show version
-```
+| Flag | Description | Default |
+|------|-------------|---------|
+| `--help` | Show this help | - |
+| `--count=N` | Number of characters (1-12) | `1` |
+| `--fast` | Skip roll animation | `false` |
+| `--onlyVanilla` | Vanilla mode only | `false` |
+| `--onlyCalamity` | Calamity mode only | `false` |
+| `--useSeeds` | Include special seeds | `true` |
+| `--useChallenges` | Include challenges | `true` |
+| `--noAscii` | Disable ASCII art | `false` |
+| `--noColor` | Disable colors | `false` |
+| `--disableClasses="Melee,Ranged"` | Disable specific classes | - |
+| `--language=en` | Set language | `en` |
 
-## Requirements
+*Run `./terraria-random --help` for full list.*
 
-- .NET runtime
-- Windows/Linux/macOS terminal with ANSI support
-- [Spectre.Console](https://spectreconsole.net/) NuGet package
+## Installation & Requirements
 
-## Building
+### Prerequisites
+- [.NET 10+ runtime](https://dotnet.microsoft.com/download)
+- Terminal with ANSI support (Windows Terminal, Linux, macOS)
 
+### Build from source
 ```bash
+git clone https://github.com/Lonewolf239/TerrariaRandom.git
+cd terraria-randomizer
 dotnet build
-dotnet publish -c Release -r linux-x64 --self-contained
+dotnet publish -c Release -r <rid> --self-contained
 ```
+*Replace `<rid>` with `win-x64`, `linux-x64`, `osx-x64`, etc.*
 
-## Author
+## Supported Languages
+- English (default)
+- Run `--listLanguages` for all available
 
-Lonewolf239
+## Example Output
+#TODO
+
+## Credits
+**Author:** [Lonewolf239](https://github.com/Lonewolf239)
+
+Star this repo if it saves you time on character creation!
 
 ***
-
-*Perfect for Terraria players who want instant adventure setups without decision paralysis!*
