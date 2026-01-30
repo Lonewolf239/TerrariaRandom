@@ -2,9 +2,7 @@
 [![.NET 10](https://img.shields.io/badge/.NET-10.0-blueviolet)](https://dotnet.microsoft.com/download/dotnet/10.0)
 [![GitHub stars](https://img.shields.io/github/stars/Lonewolf239/terraria-randomizer)](https://github.com/Lonewolf239/terraria-randomizer)
 
-[EN](#EN)
-
-[RU](#RU)
+🇬🇧 [English](#EN)  |  🇷🇺 [Русский](#RU)
 
 
 # EN
