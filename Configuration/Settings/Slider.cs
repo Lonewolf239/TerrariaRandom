@@ -38,8 +38,6 @@ public class Slider
     public int MaxValue { get; }
     public bool Looped = false;
     public bool HideValue = false;
-    private readonly Array EnumValues;
-    private int CurrentEnumIndex;
 
     public Slider(string name, SliderValueTypes type = SliderValueTypes.Integer, dynamic initialValue = null, int minValue = 0, int maxValue = 1)
     {
