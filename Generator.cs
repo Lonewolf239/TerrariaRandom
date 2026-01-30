@@ -18,14 +18,18 @@ public static class Generator
 
     public static async Task<GenerationResult> GenerateCharacter(Parameters parameters, Random rand)
     {
-        string gameType = parameters.OnlyVanilla ? "Vanilla" : parameters.OnlyCalamity ? "Calamity" : Random(rand, Constants.GameTypes);
         string name = Random(rand, Constants.Names);
-        var availableClasses = Constants.Classes.ToList();
-        if (gameType == "Calamity") availableClasses.Add("Rogue");
-        var validClasses = availableClasses.Where(c => !parameters.DisabledClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
-        string characterClass = null;
-        if (!validClasses.Any()) UI.PrintError("GenerateCharacter.ValidClasses.Error".Localize(parameters.Language));
-        else characterClass = validClasses[rand.Next(validClasses.Count)];
+        (string gameType, List<string> validClasses) = GetGameTypeAndValidClasses(parameters, rand);
+        if (!validClasses.Any())
+        {
+            for (int i = 0; i < 64; i++)
+            {
+                (gameType, validClasses) = GetGameTypeAndValidClasses(parameters, rand);
+                if (validClasses.Any()) break;
+            }
+            if (!validClasses.Any()) UI.PrintError("GenerateCharacter.ValidClasses.Error".Localize(parameters.Language));
+        }
+        string characterClass = validClasses[rand.Next(validClasses.Count)];
         string evil = Random(rand, Constants.Contagions);
         string challenge = Random(rand, Constants.Challenges);
         string seed = Random(rand, Constants.SpecialSeeds);
@@ -44,6 +48,15 @@ public static class Generator
             Difficulty = difficulty,
             CalamityDifficulty = calamityDifficulty
         };
+    }
+
+    private static (string, List<string>) GetGameTypeAndValidClasses(Parameters parameters, Random rand)
+    {
+        string gameType = parameters.OnlyVanilla ? "Vanilla" : parameters.OnlyCalamity ? "Calamity" : Random(rand, Constants.GameTypes);
+        var availableClasses = Constants.Classes.ToList();
+        if (gameType != "Calamity") availableClasses = Constants.Classes.Take(4).ToList();
+        var validClasses = availableClasses.Where(c => !parameters.DisabledClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
+        return (gameType, validClasses);
     }
 
     private static string Random(Random rand, string[] array) => array[rand.Next(array.Length)];

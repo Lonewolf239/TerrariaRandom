@@ -44,7 +44,7 @@ public class Parameters
             DisabledClasses = disabledClasses;
             if (options.Help) UI.PrintHelp();
             if (options.Version) UI.PrintVersion();
-            if (options.ListClasses) UI.PrintListClasses(Constants.Classes.Concat(new[] { "Rogue (Calamity only)" }).ToList());
+            if (options.ListClasses) UI.PrintListClasses(Constants.Classes.ToList());
             if (options.ListLanguages) UI.PrintListLanguages(Localization.GetLanguagesWithName());
             return 0;
         },
@@ -74,12 +74,11 @@ public class Parameters
 
     private static List<string> DisableClasses(List<string> classes, bool disable = true)
     {
-        var allClasses = Constants.Classes.Concat(new[] { "Rogue" }).ToList();
-        if (disable) return classes.Where(c => allClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
+        if (disable) return classes.Where(c => Constants.Classes.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
         else
         {
-            var validEnabled = classes.Where(c => allClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
-            return allClasses.Except(validEnabled, StringComparer.OrdinalIgnoreCase).ToList();
+            var validEnabled = classes.Where(c => Constants.Classes.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
+            return Constants.Classes.Except(validEnabled, StringComparer.OrdinalIgnoreCase).ToList();
         }
     }
 
@@ -113,14 +112,13 @@ public class Parameters
         if (options.DisabledClasses?.Any() == true)
         {
             var disabledClasses = options.DisabledClasses.Distinct().ToList();
-            var validClasses = Constants.Classes.Concat(new[] { "Rogue" }).ToList();
-            var invalidClasses = disabledClasses.Where(c => !validClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
+            var invalidClasses = disabledClasses.Where(c => !Constants.Classes.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
             if (invalidClasses.Any())
             {
                 UI.PrintError("Parameters.InvalidClasses.Error".Localize(options.Language) + string.Join(", ", invalidClasses));
                 return false;
             }
-            if (disabledClasses.Count == validClasses.Count)
+            if (disabledClasses.Count == Constants.Classes.Length)
             {
                 UI.PrintError("Parameters.AllClassesDisabled.Error".Localize(options.Language));
                 return false;
@@ -129,8 +127,7 @@ public class Parameters
         if (options.EnabledClasses?.Any() == true)
         {
             var enabledClasses = options.EnabledClasses.Distinct().ToList();
-            var validClasses = Constants.Classes.Concat(new[] { "Rogue" }).ToList();
-            var invalidClasses = enabledClasses.Where(c => !validClasses.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
+            var invalidClasses = enabledClasses.Where(c => !Constants.Classes.Contains(c, StringComparer.OrdinalIgnoreCase)).ToList();
             if (invalidClasses.Any())
             {
                 UI.PrintError("Parameters.InvalidClasses.Error".Localize(options.Language) + string.Join(", ", invalidClasses));

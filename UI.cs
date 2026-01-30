@@ -130,9 +130,7 @@ public static class UI
     public static void PrintResults(Parameters parameters, GenerationResult generationResult)
     {
         string gameTypeColor = GetColor(Constants.GameTypeColors, Constants.GameTypes, generationResult.GameType);
-        string classColor = generationResult.CharacterClass == "Rogue"
-            ? Constants.RogueClassColor
-            : GetColor(Constants.ClassColors, Constants.Classes, generationResult.CharacterClass);
+        string classColor = GetColor(Constants.ClassColors, Constants.Classes, generationResult.CharacterClass);
         string evilColor = GetColor(Constants.ContagionColors, Constants.Contagions, generationResult.Evil);
         string challengeColor = GetColor(Constants.ChallengeColors, Constants.Challenges, generationResult.Challenge);
         string seedColor = GetColor(Constants.SpecialSeedColors, Constants.SpecialSeeds, generationResult.Seed);

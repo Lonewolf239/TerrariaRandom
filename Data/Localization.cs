@@ -393,27 +393,27 @@ public static class Localization
         },
         ["UI.Help.Examples.Example1"] = new()
         {
-            ["en"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["ru"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["es"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["de"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["fr"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["pl"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["pt"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["it"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
-            ["tr"] = "  [green]terraria-random[/] [yellow]--count=3 --fast --noAscii --noColor[/]"
+            ["en"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["ru"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["es"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["de"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["fr"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["pl"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["pt"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["it"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]",
+            ["tr"] = "  [green]terraria-randomizer[/] [yellow]--count=3 --fast --noAscii --noColor[/]"
         },
         ["UI.Help.Examples.Example2"] = new()
         {
-            ["en"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["ru"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["es"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["de"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["fr"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["pl"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["pt"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["it"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
-            ["tr"] = "  [green]terraria-random[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]"
+            ["en"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["ru"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["es"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["de"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["fr"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["pl"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["pt"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["it"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]",
+            ["tr"] = "  [green]terraria-randomizer[/] [yellow]--onlyCalamity --useChallenges --useSeeds[/]"
         },
         ["UI.Classes"] = new()
         {

@@ -2,7 +2,7 @@ namespace TerrariaRandomizer.Data;
 
 public static class Constants
 {
-    public const string Version = "0.5.1";
+    public const string Version = "0.5.2";
     public static readonly string AsciiArt = @"       [#228B22]+%*[/]            [lime]______[/]
    [#228B22]**+*=+=+*#[/]        [lime]/\__  _\                                     __[/]
    [#228B22]*#**+++*+#+%[/]      [lime]\/_/\ \/    __   _ __   _ __    __     _ __ /\_\     __[/]
@@ -32,11 +32,10 @@ public static class Constants
     };
     public static readonly string[] GameTypes = { "Vanilla", "Calamity" };
     public static readonly string[] GameTypeColors = { "yellow", "magenta" };
-    public static readonly string[] Classes = { "Melee", "Ranged", "Mage", "Summoner" };
-    public static readonly string[] ClassColors = { "red", "cyan", "purple", "green" };
+    public static readonly string[] Classes = { "Melee", "Ranged", "Mage", "Summoner", "True Melee", "Rogue" };
+    public static readonly string[] ClassColors = { "#FF0000", "#00FFFF", "#800080", "#008000", "#B22222", "#FFFF00" };
     public static readonly string[] Contagions = { "Corruption", "Crimson", "Random" };
     public static readonly string[] ContagionColors = { "purple", "red", "white" };
-    public static readonly string RogueClassColor = "yellow";
     public static readonly string[] Challenges =
     {
         "Pacifist", "100HP", "First Night Boss", "No Healing", "No Hammers",
