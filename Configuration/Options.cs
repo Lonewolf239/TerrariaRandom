@@ -5,7 +5,7 @@ namespace TerrariaRandomizer.Configuration;
 
 public class Options
 {
-    [Option("help1")]
+    [Option("help")]
     public bool Help { get; set; }
 
     [Option("version")]
