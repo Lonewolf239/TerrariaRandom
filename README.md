@@ -1,6 +1,6 @@
 ![Terraria Randomizer](https://img.shields.io/badge/Terraria-Randomizer-brightgreen?style=for-the-badge&logo=terraria&logoColor=FFFFFF)  
 [![.NET 10+](https://img.shields.io/badge/.NET-10+-2D2D2D?style=for-the-badge&logo=dotnet&logoColor=FFFFFF)](https://dotnet.microsoft.com/)
-[![MIT](https://img.shields.io/badge/License-MIT-2D2D2D?style=for-the-badge&logo=heart&logoColor=FFFFFF)](https://opensource.org/licenses/MIT)
+[![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=heart&logoColor=FFFFFF)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 🇬🇧 [English](#EN)  |  🇷🇺 [Русский](#RU)
 
